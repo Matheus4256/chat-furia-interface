@@ -1,0 +1,178 @@
+/* Configurações gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Cor de fundo escura */
+    color: #FFFFFF;           /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative; /* Para posicionar elementos filhos dentro do cabeçalho */
+    height: 250px; /* Define a altura do cabeçalho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    filter: brightness(0.5) saturate(0.5); /* Aumenta o brilho e a saturação */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+.background-image {
+    position: absolute; /* Fixa a imagem como fundo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    z-index: 0; /* Coloca a imagem atrás do conteúdo */
+}
+
+.content {
+    position: relative; /* Para que os elementos fiquem acima do fundo */
+    z-index: 1; /* Coloca logo e título acima da imagem de fundo */
+    display: flex;
+    flex-direction: column; /* Organiza logo e texto em coluna */
+    align-items: center; /* Centraliza o texto e a logo */
+}
+
+.logo {
+    width: 150px; /* Ajusta o tamanho da logo */
+    height: auto; /* Mantém proporções corretas */
+}
+
+
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4a4747; /* Fundo preto */
+    text-align: center;
+    padding: 10px;            /* Espaçamento interno */
+}
+
+/* Estilo para a seção principal */
+main {
+    display: flex;
+    flex-direction: column;    /* Organiza os elementos verticalmente */
+    align-items: center;       /* Centraliza os elementos */
+    margin-top: 20px;          /* Espaçamento acima do conteúdo principal */
+}
+
+/* Caixa de chat */
+#chat-box {
+    width: 59.5%;                /* Largura em relação à página */
+    height: 220px;             /* Altura fixa */
+    border: 2px solid #1E90FF; /* Bordas brancas */
+    overflow-y: auto;          /* Ativa rolagem vertical */
+    margin-bottom: 10px;       /* Espaçamento abaixo da caixa */
+    padding: 10px;             /* Espaçamento interno */
+}
+
+/* Campo de entrada do usuário */
+#user-input {
+    width: 60%;                /* Largura do campo de texto */
+    padding: 10px;             /* Espaçamento interno */
+    background-color: #c2b8b8; 
+
+}
+
+/* Botão de enviar */
+#send-button {
+    padding: 10px 20px;        /* Espaçamento interno do botão */
+    background-color: #c2b8b8; /* Fundo branco */
+    color: #121212;            /* Texto com cor escura */
+    border: none;              /* Remove bordas externas */
+    cursor: pointer;           /* Muda o cursor para "mão" */
+}
+
+.logo {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura proporcional à largura */
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+    object-fit: contain; /* Evita distorções */
+}
+
+header h1 {
+    color: #1E90FF; /* Azul - cor inspirada no "Dodger Blue" */
+    font-size: 28px; /* Ajuste do tamanho do texto */
+    text-shadow: 2px 2px 5px #000000; /* Sombra leve para destacar */
+    font-weight: bold; /* Negrito para reforçar o destaque */
+    margin: 10px 0;
+}
+
+#chat-box, #user-input {
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#send-button:hover {
+    background-color: #1E90FF;
+    transform: scale(1.1); /* Faz o botão aumentar levemente */
+    transition: 0.3s ease; /* Suaviza o efeito */
+}
+
+/* Tela pequena (smartphones - largura máxima de 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    #chat-box {
+        width: 90%; /* Aumenta a largura relativa para caber em telas pequenas */
+        height: 200px; /* Ajusta a altura */
+    }
+
+    #user-input {
+        width: 70%; /* Campo de entrada ocupa mais espaço horizontal */
+        padding: 8px; /* Reduz o padding interno */
+    }
+
+    #send-button {
+        padding: 8px 15px; /* Botão menor */
+        font-size: 14px; /* Texto do botão menor */
+    }
+
+    header h1 {
+        font-size: 20px; /* Reduz o tamanho do cabeçalho */
+        margin: 5px 0; /* Diminui o espaçamento */
+    }
+}
+
+/* Tela média (tablets - largura máxima de 768px) */
+@media only screen and (max-width: 768px) {
+    #chat-box {
+        width: 80%;
+        height: 250px;
+    }
+
+    #user-input {
+        width: 75%;
+        padding: 10px;
+    }
+
+    #send-button {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
